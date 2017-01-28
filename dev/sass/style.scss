@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	position: relative;
+	font-family:'Arial', sans-serif;
+	font-size: 100%;
+}
+
+
+.clearfix {
+	&:after, &:before {
+		content: '';
+		width: 100%;
+		display: table;
+		clear: both;
+	}
+}
+#mainwrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-width: 2140px;
+	background: #fff;
+}
+.resize {
+	position: relative;
+	margin: 0 auto;
+	width: 2100px;
+	padding: 0 20px;
+}
+
+@import "_part6";
+@import "_part7";
+@import "_part8";
